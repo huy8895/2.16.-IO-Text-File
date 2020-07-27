@@ -8,7 +8,7 @@ public class CopyFile {
         OutputStream outputStream = null;
         File file = new File("folder/test.txt");
         try {
-            inputStream = new FileInputStream("data/test.txt");
+            inputStream = new FileInputStream("folder/country.csv");
             if (!file.exists()){
                 outputStream = new FileOutputStream("folder/test.txt");
                 int k = 0;

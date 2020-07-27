@@ -1,18 +1,12 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class test {
     public static void main(String[] args) throws IOException {
-        File file = new File("testFileWriter");
-        file.mkdirs();
+        BufferedReader fileReader = new BufferedReader(new FileReader("folder/country.csv"));
 
-
-        FileWriter fileWriter = new FileWriter("testFileWriter/test.txt");
-
-        String string = "huy";
-
-        fileWriter.close();
-
+        String string;
+        while ((string = fileReader.readLine()) != null){
+            System.out.println(string);
+        }
     }
 }
