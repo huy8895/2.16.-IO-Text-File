@@ -1,6 +1,5 @@
-package gpcoder.FileReaderAndWriter;
+package gpcoder.characterStream.FileReaderAndWriter;
 
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
